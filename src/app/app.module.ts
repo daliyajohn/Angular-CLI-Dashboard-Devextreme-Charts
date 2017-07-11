@@ -12,7 +12,7 @@ import { MdListModule } from '@angular/material';
 import { MdIconModule } from '@angular/material';
 import { MdSidenavModule } from '@angular/material';
 import { MdToolbarModule } from '@angular/material';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 
@@ -32,7 +32,8 @@ import { AppComponent } from './app.component';
     MdListModule,
     MdIconModule,
     MdSidenavModule,
-    MdToolbarModule
+    MdToolbarModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
