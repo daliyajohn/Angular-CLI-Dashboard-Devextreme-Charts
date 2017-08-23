@@ -1,7 +1,108 @@
-<div fxFlex="50%">
-	<h1>
-  {{title}}
-</h1>
-</div>
+<md-sidenav-container fullscreen>
+    <md-toolbar *ngIf="showMenu" (click)="isTlbOpen = isTlbClose;menuClose()">
+        <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-around center" style="box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.24);height:56px" id="floating-toolbar">
+            <div fxFlex="70%" class="marginRight-logo">
+                <p class="admin_name">
+                    <img src="image/sherlock-logo_Blue_md.png" style="width:140px;margin-top: 6px; margin-left: -19px;">
+                </p>
+            </div>
 
-  <a [routerLink]="['/login']">Home</a>
+            <div fxFlex="30%" class="admin_details" fxLayout="row" fxLayoutAlign="end center">
+                <p fxHide.xs class="person">Customer name</p>
+                <md-icon class="user_icon" >
+                    account_circle
+                </md-icon>
+            </div>
+        </div>
+    </md-toolbar>
+
+    <md-sidenav *ngIf="showMenu" #sidenav mode="over" opened="true" class="app-sidenav" [ngClass]="{'tlb-open': isTlbOpen}">
+        <div fxLayout="row" class="logo-div" (click)="isTlbOpen = !isTlbOpen;animationMenu()">
+            <div class="site-logo">
+                <div id="menu" class="menu btn12">
+                    <div class="icon"></div>
+                </div>
+            </div>
+
+
+            <p class="admin_name" style="font-size:16px;padding-left: 1.1em;">
+                <img src="image/sherlock-logo_F9_sm.png">
+            </p>
+        </div>
+
+        <md-list class="md-list" style="padding-top: 0px; position: relative;
+    left: -2.5em;width:290px;">
+            <nav class="vertical">
+                <ul>
+                    <li>
+                        <md-list-item>
+                            <div class="linkIcon1" style="width: 20px;">
+                                <img src="image/views.png" style="width: 100%;">
+                            </div>
+                            <h4 (click)="isTlbOpen = !isTlbOpen;" style="margin-left: 23px;">Views</h4>
+
+                        </md-list-item>
+                    </li>
+
+                    <li>
+                        <md-list-item>
+                            <div class="linkIcon1 disabled" style="width: 20px;">
+                                <img src="image/connecters.png" style="width: 100%;">
+                            </div>
+                            <h4 style="padding-left: 2px;" (click)="isTlbOpen = !isTlbOpen;">Connectors</h4>
+                        </md-list-item>
+                    </li>
+                    <li id="drop-down" class="square">
+                        <md-list-item>
+                            <md-icon class="linkIcon1 disable">
+                                settings
+                            </md-icon>
+                            <h4 (click)="isTlbOpen = !isTlbOpen;">Settings</h4>
+                        </md-list-item>
+                    </li>
+                    <li>
+                        <md-list-item>
+                            <md-icon class="linkIcon1 disable">
+                                info
+                            </md-icon>
+                            <h4 (click)="isTlbOpen = !isTlbOpen;">Status</h4>
+                        </md-list-item>
+                    </li>
+                    <li>
+                        <md-list-item>
+                            <md-icon class="linkIcon1">
+                                help
+                            </md-icon>
+                            <h4 (click)="isTlbOpen = !isTlbOpen;">Help</h4>
+                        </md-list-item>
+                    </li>
+                    <li>
+                        <md-list-item>
+                            <md-icon class="linkIcon1">
+                                feedback
+                            </md-icon>
+                            <h4 (click)="isTlbOpen = !isTlbOpen;">Feedback</h4>
+                        </md-list-item>
+                    </li>
+                    <li>
+                        <md-list-item>
+                            <md-icon class="linkIcon1 disable">
+                                shopping_cart
+                            </md-icon>
+                            <h4 (click)="isTlbOpen = !isTlbOpen;">Marketplace</h4>
+                        </md-list-item>
+                    </li>
+                </ul>
+            </nav>
+        </md-list>
+
+    </md-sidenav>
+    <div class="main-router-ipad" (click)="isTlbOpen = isTlbClose;menuClose()" class="marginRight" [ngClass]="{
+     'main-router':service.ui({n:'sidenav'}), 'main-router-main':!service.ui({n:'sidenav'}), 'marginRight_main':!service.ui({n:'sidenav'})}">
+        <router-outlet>
+        </router-outlet>
+    </div>
+</md-sidenav-container>
+
+
+
