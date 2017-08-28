@@ -2,4 +2,103 @@
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 body {
 	    margin: 0px;
+	  }
+
+.main-router {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-router-main {
+    height: 100% !important;
+    margin-top: 0 !important;
+    overflow: auto;
+    background: rgba(134, 119, 119, 0.08);
+}
+.navBarIcon {
+    font-size: 2em !important;
+    color: #000;
+    margin-bottom: 17px;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+.app-sidenav {
+    width: 199px;
+    background: #095871!important;
+    transition: 0.2s !important;
+    transition-timing-function: linear !important;
+}
+.mat-toolbar {
+    padding: 0 !important;
+    min-height: 56px!important;
+}
+.app-sidenav h4 {
+    color: #9E9E9E;
+    color: rgba(250, 242, 242, 0.73);
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 800;
+}
+.mat-sidenav {
+    width: 52px;
+    cursor: pointer;
+    min-width: 0px !important;
+    overflow: hidden;
+}
+.mat-sidenav .linkIcon1 {
+    font-size: 23px !important;
+}
+
+.tlb-open {
+    width: 250px;
+}
+
+.tlb-close {
+    width: 58px;
+}
+
+.tlb-open h4 {
+    display: block;
+    font-weight: 800;
+}
+.mat-sidenav-transition .mat-sidenav-content {
+    transition-duration: .4s !important;
+    transition-timing-function: linear !important;
+}
+.mat-sidenav .mat-list .mat-list-item:hover {
+    background: #06394a;
+    width: 250px;
+}
+
+.app-sidenav .mat-list .mat-list-item .mat-list-item-content,
+.app-sidenav .mat-nav-list .mat-list-item .mat-list-item-content {
+    height: 53px!important;
+}
+@media (min-width: 740px) and (max-width: 888px) {
+    .mat-list .mat-list-item .mat-list-item-content {
+        padding: 0px 7px 0px 7px;
+    }
+    .main-router-main {
+        max-height: 100% !important;
+        height: initial !important;
+        overflow: auto !important;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 790px) {
+    .main-router-main {
+        max-height: 100% !important;
+        height: initial !important;
+        overflow: auto !important;
+    }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .main-router-ipad {
+        height: 100vh;
+    }
+}
+.overlay-none {
+    display: none;
 }
