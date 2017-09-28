@@ -67,7 +67,7 @@
             </nav>
         </md-list>
     </md-sidenav>
-    <div class="main-router-ipad" (click)="isTlbOpen = isTlbClose;menuClose()" class="marginRight" [ngClass]="{
+    <div class="main-router-ipad" (click)="isTlbOpen = isTlbClose;" class="marginRight" [ngClass]="{
      'main-router':service.ui({n:'sidenav'}), 'main-router-main':!service.ui({n:'sidenav'}), 'marginRight_main':!service.ui({n:'sidenav'})}">
         <router-outlet>
         </router-outlet>

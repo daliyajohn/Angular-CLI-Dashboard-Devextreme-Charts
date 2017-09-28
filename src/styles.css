@@ -25,7 +25,7 @@ body {
 }
 .app-sidenav {
     width: 199px;
-    background: #095871!important;
+    background: rgb(38, 45, 71)!important;
     transition: 0.2s !important;
     transition-timing-function: linear !important;
 }
