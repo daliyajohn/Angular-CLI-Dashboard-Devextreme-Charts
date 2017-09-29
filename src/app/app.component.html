@@ -1,24 +1,13 @@
 <md-sidenav-container fullscreen>
-    <md-toolbar (click)="isTlbOpen = isTlbClose;">
-        <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-around center" style="box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.24);height:56px" id="floating-toolbar">
-          <div fxFlex="70%" class="marginRight-logo">
-            <p class="admin_name">
-                <img src="">
-            </p>
-          </div>
-        </div>
-    </md-toolbar>
     <md-sidenav  #sidenav mode="side" opened="true" class="app-sidenav" [ngClass]="{'tlb-open': isTlbOpen}">
       <div fxLayout="row" class="logo-div" (click)="isTlbOpen = !isTlbOpen;">
         <div class="site-logo">
-          <div id="menu" class="menu btn12">
-            <div class="icon"></div>
-          </div>
+          <p class="admin_name">
+            <img src="./assets/images/PicsArt_1421762609611.jpg">
+          </p>
         </div>
-        <p class="admin_name" style="font-size:16px;padding-left: 1.1em;">
-          <!-- <img src="image/sherlock-logo_F9_sm.png"> -->
-          Logo
-        </p>
+
+        <h4 (click)="isTlbOpen = !isTlbOpen;" style="margin-left: 15px; margin-top: 25px;">Daliya John</h4>
       </div>
       <md-list class="md-list" style="padding-top: 0px; position: relative; left: -2.5em;width:290px;">
             <nav class="vertical">
@@ -27,40 +16,41 @@
                   <md-list-item>
                     <div class="linkIcon1" style="width: 20px;">
                       <md-icon class="linkIcon1">
-                        feedback
+                        home
                       </md-icon>
                     </div>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;" style="margin-left: 23px;">service</h4>
-                  </md-list-item>
-                </li>
-                <li>
-                  <md-list-item>
-                    <md-icon class="linkIcon1 disable">
-                        info
-                    </md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">Status</h4>
-                  </md-list-item>
-                </li>
-                <li>
-                  <md-list-item>
-                    <md-icon class="linkIcon1">home</md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">Help</h4>
+                    <h4 (click)="isTlbOpen = !isTlbOpen;" style="margin-left: 23px;">Dashboards</h4>
                   </md-list-item>
                 </li>
                 <li>
                   <md-list-item>
                     <md-icon class="linkIcon1">
-                        feedback
+                      email_outline
                     </md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">Service 2</h4>
+                    <h4 (click)="isTlbOpen = !isTlbOpen;">Messege</h4>
                   </md-list-item>
                 </li>
                 <li>
                   <md-list-item>
-                    <md-icon class="linkIcon1 disable">
-                        shopping_cart
+                    <md-icon class="linkIcon1">brightness_low
+                      </md-icon>
+                    <h4 (click)="isTlbOpen = !isTlbOpen;">Task</h4>
+                  </md-list-item>
+                </li>
+                <li>
+                  <md-list-item>
+                    <md-icon class="linkIcon1">
+                        today
                     </md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">About us</h4>
+                    <h4 (click)="isTlbOpen = !isTlbOpen;">Calender</h4>
+                  </md-list-item>
+                </li>
+                <li>
+                  <md-list-item>
+                    <md-icon class="linkIcon1">
+                      perm_identity
+                    </md-icon>
+                    <h4 (click)="isTlbOpen = !isTlbOpen;">Contact</h4>
                   </md-list-item>
                 </li>
               </ul>

@@ -22,13 +22,7 @@ nav.vertical a {
   transition: 0.3s;
 }
 
-nav.vertical ul ul {
-  background: rgba(0, 0, 0, 0.1);
-  padding-left: 20px;
-  transition: max-height 0.2s ease-out;
-  max-height: 0;
-  overflow: hidden;
-}
+
 
 nav.vertical li:hover>ul {
   max-height: 500px;
@@ -45,4 +39,10 @@ nav.vertical li:hover>ul {
 
 .mat-sidenav-backdrop.mat-sidenav-shown {
   visibility: hidden;
+}
+.admin_name img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 9px;
 }

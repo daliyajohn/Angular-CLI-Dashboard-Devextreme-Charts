@@ -1,80 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 body {
-	    margin: 0px;
-	  }
+  margin: 0px;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
 
 .main-router {
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-
 .main-router-main {
-    height: 100% !important;
-    margin-top: 0 !important;
-    overflow: auto;
-    background: rgba(134, 119, 119, 0.08);
-}
-.navBarIcon {
-    font-size: 2em !important;
-    color: #000;
-    margin-bottom: 17px;
-    margin-right: 0.5em;
-    cursor: pointer;
+  height: 100% !important;
+  margin-top: 0 !important;
+  overflow: auto;
+  background: rgb(23, 28, 48);
 }
 .app-sidenav {
-    width: 199px;
-    background: rgb(38, 45, 71)!important;
-    transition: 0.2s !important;
-    transition-timing-function: linear !important;
-}
-.mat-toolbar {
-    padding: 0 !important;
-    min-height: 56px!important;
+  width: 199px;
+  background: rgb(38, 45, 71)!important;
+  transition: 0.2s !important;
+  transition-timing-function: linear !important;
 }
 .app-sidenav h4 {
-    color: #9E9E9E;
-    color: rgba(250, 242, 242, 0.73);
-    font-size: 15px;
-    margin-left: 20px;
-    font-weight: 800;
+  color: rgba(250, 242, 242, 0.73);
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: normal;
 }
 .mat-sidenav {
-    width: 52px;
-    cursor: pointer;
-    min-width: 0px !important;
-    overflow: hidden;
+  width: 52px;
+  cursor: pointer;
+  min-width: 0px !important;
+  overflow: hidden;
 }
 .mat-sidenav .linkIcon1 {
-    font-size: 23px !important;
+  font-size: 23px !important;
+  color: rgba(255, 255, 255, 0.54);
 }
 
 .tlb-open {
-    width: 250px;
+  width: 175px;
 }
 
 .tlb-close {
-    width: 58px;
+  width: 58px;
 }
 
 .tlb-open h4 {
-    display: block;
-    font-weight: 800;
+  display: block;
 }
 .mat-sidenav-transition .mat-sidenav-content {
-    transition-duration: .4s !important;
-    transition-timing-function: linear !important;
+  transition-duration: .2s !important;
+  transition-timing-function: linear !important;
 }
 .mat-sidenav .mat-list .mat-list-item:hover {
-    background: #06394a;
-    width: 250px;
+  background: rgba(23, 28, 48, 0.52);
+  width: 250px;
 }
 
 .app-sidenav .mat-list .mat-list-item .mat-list-item-content,
 .app-sidenav .mat-nav-list .mat-list-item .mat-list-item-content {
     height: 53px!important;
 }
+
+.admin_name img .tlb-open {
+  width: 123px;
+  height: 123px;
+  margin-left: 25px;
+}
+
+
+
 @media (min-width: 740px) and (max-width: 888px) {
     .mat-list .mat-list-item .mat-list-item-content {
         padding: 0px 7px 0px 7px;
