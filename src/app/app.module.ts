@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MdCardModule } from '@angular/material';
@@ -18,8 +18,9 @@ import { MdTooltipModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
-import { AppRoutingModule } from './app.routes'; 
+import { AppRoutingModule } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { RouterModule } from '@angular/router';
     MdToolbarModule,
     MdTooltipModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DashboardModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
