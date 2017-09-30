@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     RouterModule.forRoot([
       { path: 'dashboard', component: DashboardComponent },
+      { path: '', component: DashboardComponent },
     ])
   ],
   exports: [RouterModule]

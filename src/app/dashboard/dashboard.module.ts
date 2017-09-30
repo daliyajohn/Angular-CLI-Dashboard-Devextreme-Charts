@@ -8,10 +8,13 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardService } from './dashboard.service';
 import { MdIconModule } from '@angular/material';
 import { MdCardModule } from '@angular/material';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { BarChartService } from './bar-chart/bar-chart.service';
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +24,6 @@ import { MdCardModule } from '@angular/material';
     MdIconModule,
     MdCardModule
   ],
-  providers: [DashboardService]
+  providers: [DashboardService, BarChartService]
 })
 export class DashboardModule { }
