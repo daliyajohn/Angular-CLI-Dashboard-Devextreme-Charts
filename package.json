@@ -26,6 +26,7 @@
     "core-js": "^2.4.1",
     "devextreme": "^17.1.5",
     "devextreme-angular": "^17.1.5",
+    "jquery": "^3.2.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },

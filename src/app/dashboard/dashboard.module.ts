@@ -10,6 +10,8 @@ import { MdIconModule } from '@angular/material';
 import { MdCardModule } from '@angular/material';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { BarChartService } from './bar-chart/bar-chart.service';
+import { DxChartModule } from 'devextreme-angular';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { BarChartService } from './bar-chart/bar-chart.service';
     HttpModule,
     FlexLayoutModule,
     MdIconModule,
-    MdCardModule
+    MdCardModule,
+    DxChartModule
   ],
   providers: [DashboardService, BarChartService]
 })
