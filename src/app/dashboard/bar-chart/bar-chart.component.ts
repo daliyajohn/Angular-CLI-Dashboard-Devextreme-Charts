@@ -1,6 +1,6 @@
 import { NgModule, Component, ViewChild, Inject, enableProdMode } from '@angular/core';
 import { BarChartService , Data} from './bar-chart.service';
-import * as $ from 'jquery';
+// import * as $ from 'jquery';/
 
 @Component({
   moduleId: module.id,

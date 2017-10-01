@@ -29,6 +29,24 @@
       }
     }
   ],
+
+
+
+
+"packages": {
+  "devextreme": {
+    "defaultExtension": "js"
+  },
+  "devextreme-angular": {
+      "main": "index.js",
+      "defaultExtension": "js"
+  }
+},
+
+
+
+
+
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
