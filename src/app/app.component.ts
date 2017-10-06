@@ -8,10 +8,13 @@ import { AppService } from './app.service';
 })
 export class AppComponent {
 	showMenu: boolean = false;
-    showTable:boolean = false;
-	public isTlbOpen:any;
-  	public isTlbClose:any;
+  showTable: boolean = false;
+	public isTlbOpen: any;
+  public isTlbClose: any;
 	constructor( public service: AppService) {
-    	this.service.showMenu.emit(false);
+    this.service.showMenu.emit(false);
+    this.service.showMenu.subscribe((mode: boolean) => {
+      this.showMenu = mode;
+    });
 	}
 }

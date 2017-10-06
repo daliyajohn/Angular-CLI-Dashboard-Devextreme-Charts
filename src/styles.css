@@ -33,6 +33,7 @@ body {
   cursor: pointer;
   min-width: 0px !important;
   overflow: hidden;
+  transform: translate3d(0,0,0)!important;
 }
 .mat-sidenav .linkIcon1 {
   font-size: 23px !important;
@@ -116,4 +117,10 @@ body {
   height: 91px;
   border-radius: 50%;
   margin-left: 39px;
+}
+.mat-sidenav.mat-sidenav-closed {
+  visibility: visible;
+}
+.mat-sidenav-backdrop.mat-sidenav-shown {
+  background-color: initial;
 }
