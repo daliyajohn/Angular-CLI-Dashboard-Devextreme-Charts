@@ -21,6 +21,7 @@ import { Bar3ChartService } from './bar-chart3/bar-chart3.service';
 
 import { AreaChartComponent } from './area-chart/area-chart.component';
 import { AreaChartService } from './area-chart/area-chart.service';
+import { DxSelectBoxModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AreaChartService } from './area-chart/area-chart.service';
     FlexLayoutModule,
     MdIconModule,
     MdCardModule,
-    DxChartModule
+    DxChartModule,
+    DxSelectBoxModule
   ],
   providers: [
     DashboardService, 
