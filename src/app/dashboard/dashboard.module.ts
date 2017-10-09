@@ -19,6 +19,8 @@ import { DxChartModule } from 'devextreme-angular';
 import { Bar3ChartComponent } from './bar-chart3/bar-chart3.component';
 import { Bar3ChartService } from './bar-chart3/bar-chart3.service';
 
+import { AreaChartComponent } from './area-chart/area-chart.component';
+import { AreaChartService } from './area-chart/area-chart.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { Bar3ChartService } from './bar-chart3/bar-chart3.service';
     BarChartComponent,
     Bar1ChartComponent,
     Bar2ChartComponent,
-    Bar3ChartComponent
+    Bar3ChartComponent,
+    AreaChartComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,13 @@ import { Bar3ChartService } from './bar-chart3/bar-chart3.service';
     MdCardModule,
     DxChartModule
   ],
-  providers: [DashboardService, BarChartService, Bar1ChartService, Bar2ChartService, Bar3ChartService]
+  providers: [
+    DashboardService, 
+    BarChartService, 
+    Bar1ChartService, 
+    Bar2ChartService, 
+    Bar3ChartService,
+    AreaChartService
+  ]
 })
 export class DashboardModule { }
