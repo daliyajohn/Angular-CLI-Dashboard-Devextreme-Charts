@@ -21,6 +21,8 @@ import { Bar3ChartService } from './bar-chart3/bar-chart3.service';
 
 import { AreaChartComponent } from './area-chart/area-chart.component';
 import { AreaChartService } from './area-chart/area-chart.service';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { LineChartService } from './line-chart/line-chart.service';
 import { DxSelectBoxModule } from 'devextreme-angular';
 
 @NgModule({
@@ -30,7 +32,8 @@ import { DxSelectBoxModule } from 'devextreme-angular';
     Bar1ChartComponent,
     Bar2ChartComponent,
     Bar3ChartComponent,
-    AreaChartComponent
+    AreaChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
@@ -43,12 +46,13 @@ import { DxSelectBoxModule } from 'devextreme-angular';
     DxSelectBoxModule
   ],
   providers: [
-    DashboardService, 
-    BarChartService, 
-    Bar1ChartService, 
-    Bar2ChartService, 
+    DashboardService,
+    BarChartService,
+    Bar1ChartService,
+    Bar2ChartService,
     Bar3ChartService,
-    AreaChartService
+    AreaChartService,
+    LineChartService
   ]
 })
 export class DashboardModule { }
