@@ -19,7 +19,7 @@
     "@angular/flex-layout": "^2.0.0-beta.8",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
-    "@angular/material": "^2.0.0-beta.6",
+    "@angular/material": "2.0.0-beta.3",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
@@ -27,8 +27,8 @@
     "bootstrap": "^3.3.7",
     "bower": "^1.8.2",
     "core-js": "^2.4.1",
-    "devextreme": "^17.1.6",
-    "devextreme-angular": "^17.1.6"
+    "devextreme": "17.1",
+    "devextreme-angular": "17.1"
   },
   "devDependencies": {
     "@angular/cli": "1.0.6",
