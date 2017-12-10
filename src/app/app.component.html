@@ -1,4 +1,8 @@
 <md-sidenav-container fullscreen>
+
+   
+
+  
     <md-sidenav  #sidenav mode="over" opened="true" class="app-sidenav" [ngClass]="{'tlb-open': isTlbOpen}">
       <div fxLayout="row" class="logo-div" (click)="isTlbOpen = !isTlbOpen;">
         <div class="site-logo">
@@ -57,6 +61,7 @@
     </md-sidenav>
     <div class="main-router-ipad" (click)="isTlbOpen = isTlbClose;" class="marginRight" [ngClass]="{
      'main-router':service.ui({n:'sidenav'}), 'main-router-main':!service.ui({n:'sidenav'}), 'marginRight_main':!service.ui({n:'sidenav'})}">
+     <md-toolbar>My App</md-toolbar>
         <router-outlet>
         </router-outlet>
     </div>

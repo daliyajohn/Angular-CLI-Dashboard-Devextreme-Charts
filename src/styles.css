@@ -11,14 +11,13 @@ body {
   overflow-x: hidden;
 }
 .main-router-main {
-  height: 100% !important;
-  margin-top: 0 !important;
-  overflow: auto;
-  background: rgb(23, 28, 48);
+  max-height: 100% !important;
+  height: initial !important;
+  overflow: auto !important;
 }
 .app-sidenav {
   width: 199px;
-  background: rgb(38, 45, 71)!important;
+  background: #293a42;
   transition: 0.2s !important;
   transition-timing-function: linear !important;
 }
@@ -53,13 +52,13 @@ body {
 }
 
 .mat-sidenav-container {
-  background: #171C30;
+  background: #f0f5f1;
 }
 
 .mat-sidenav-transition .mat-sidenav-content {
   transition-duration: .2s !important;
   transition-timing-function: linear !important;
-  background: #171C30;
+  background: #f0f5f1;
 }
 .mat-sidenav .mat-list .mat-list-item:hover {
   background: rgba(23, 28, 48, 0.52);
@@ -83,19 +82,19 @@ body {
     .mat-list .mat-list-item .mat-list-item-content {
         padding: 0px 7px 0px 7px;
     }
-    .main-router-main {
+    /* .main-router-main {
         max-height: 100% !important;
         height: initial !important;
         overflow: auto !important;
-    }
+    } */
 }
 
 @media (min-width: 490px) and (max-width: 790px) {
-    .main-router-main {
+    /* .main-router-main {
         max-height: 100% !important;
         height: initial !important;
         overflow: auto !important;
-    }
+    } */
 }
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
@@ -123,4 +122,9 @@ body {
 }
 .mat-sidenav-backdrop.mat-sidenav-shown {
   background-color: initial;
+}
+.mat-toolbar {
+  position: fixed;
+  z-index: 1;
+  background: white;
 }
