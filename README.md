@@ -1,6 +1,6 @@
 ## Demo image
 
-![alt text](https://github.com/daliyajohn/Angular-CLI-Dashboard-Devextreme-Charts/src/assets/images/AngularCli.png)
+![alt text] (https://github.com/daliyajohn/Angular-CLI-Dashboard-Devextreme-Charts/src/assets/images/AngularCli.png)
 # AngularCli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
