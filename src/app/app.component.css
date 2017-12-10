@@ -33,8 +33,10 @@ nav.vertical li:hover>ul {
   visibility: hidden;
 }
 .welcome h4 {
-  margin-left: 55px;  
+  margin-left: 55px;
+  color: #5b4f4f82;
 }
 .welcome .mat-icon {
   padding: 0px 8px 0px 8px;
+  color: #5b4f4f82;
 }
