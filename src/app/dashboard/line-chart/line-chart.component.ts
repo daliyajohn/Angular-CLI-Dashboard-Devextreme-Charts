@@ -1,6 +1,6 @@
 import { NgModule, Component, ViewChild, Inject, enableProdMode } from '@angular/core';
-import { LineChartService } from './line-chart.service';
-// import * as $ from 'jquery';/
+import { LineChartService , CountryInfo, EnergyDescription } from './line-chart.service';
+import { DxChartModule, DxSelectBoxModule } from 'devextreme-angular';
 
 @Component({
   moduleId: module.id,
@@ -9,7 +9,19 @@ import { LineChartService } from './line-chart.service';
   styleUrls: ['line-chart.component.css']
 })
 export class LineChartComponent  {
-  constructor() {
+  types: string[] = ['line', 'stackedline', 'fullstackedline'];
+  countriesInfo: CountryInfo[];
+  energySources: EnergyDescription[];
+
+  constructor(service: LineChartService) {
+      this.countriesInfo = service.getCountriesInfo();
+      this.energySources = service.getEnergySources();
+  }
+
+  customizeTooltip(arg) {
+      return {
+          text: arg.valueText
+      }
   }
 }
 
