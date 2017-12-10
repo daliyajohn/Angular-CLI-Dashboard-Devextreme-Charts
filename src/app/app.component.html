@@ -1,68 +1,73 @@
 <md-sidenav-container fullscreen>
-
-   
-
-  
-    <md-sidenav  #sidenav mode="over" opened="true" class="app-sidenav" [ngClass]="{'tlb-open': isTlbOpen}">
-      <div fxLayout="row" class="logo-div" (click)="isTlbOpen = !isTlbOpen;">
-        <div class="site-logo">
-          <p class="admin_name">
-            <img src="./assets/images/PicsArt_1421762609611.jpg">
-          </p>
-        </div>
+  <md-sidenav #sidenav mode="over" opened="true" class="app-sidenav" [ngClass]="{'tlb-open': isTlbOpen}">
+    <div fxLayout="row" class="logo-div" (click)="isTlbOpen = !isTlbOpen;">
+      <div class="site-logo">
+        <p class="admin_name">
+          <img src="./assets/images/PicsArt_1421762609611.jpg">
+        </p>
       </div>
-      <md-list class="md-list" style="padding-top: 0px; position: relative; left: -2.5em;width:290px;">
-            <nav class="vertical">
-              <ul>
-                <li>
-                  <md-list-item>
-                    <div class="linkIcon1" style="width: 20px;">
-                      <md-icon class="linkIcon1">
-                        home
-                      </md-icon>
-                    </div>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;" style="margin-left: 23px;">Dashboards</h4>
-                  </md-list-item>
-                </li>
-                <li>
-                  <md-list-item>
-                    <md-icon class="linkIcon1">
-                      email_outline
-                    </md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">Messege</h4>
-                  </md-list-item>
-                </li>
-                <li>
-                  <md-list-item>
-                    <md-icon class="linkIcon1">brightness_low
-                      </md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">Task</h4>
-                  </md-list-item>
-                </li>
-                <li>
-                  <md-list-item>
-                    <md-icon class="linkIcon1">
-                        today
-                    </md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">Calender</h4>
-                  </md-list-item>
-                </li>
-                <li>
-                  <md-list-item>
-                    <md-icon class="linkIcon1">
-                      perm_identity
-                    </md-icon>
-                    <h4 (click)="isTlbOpen = !isTlbOpen;">Contact</h4>
-                  </md-list-item>
-                </li>
-              </ul>
-            </nav>
-        </md-list>
-    </md-sidenav>
-    <div class="main-router-ipad" (click)="isTlbOpen = isTlbClose;" class="marginRight" [ngClass]="{
-     'main-router':service.ui({n:'sidenav'}), 'main-router-main':!service.ui({n:'sidenav'}), 'marginRight_main':!service.ui({n:'sidenav'})}">
-     <md-toolbar>My App</md-toolbar>
-        <router-outlet>
-        </router-outlet>
     </div>
+    <md-list class="md-list" style="padding-top: 0px; position: relative; left: -2.5em;width:290px;">
+      <nav class="vertical">
+        <ul>
+          <li>
+            <md-list-item>
+              <div class="linkIcon1" style="width: 20px;">
+                <md-icon class="linkIcon1">
+                  home
+                </md-icon>
+              </div>
+              <h4 (click)="isTlbOpen = !isTlbOpen;" style="margin-left: 23px;">Dashboards</h4>
+            </md-list-item>
+          </li>
+          <li>
+            <md-list-item>
+              <md-icon class="linkIcon1">
+                email_outline
+              </md-icon>
+              <h4 (click)="isTlbOpen = !isTlbOpen;">Messege</h4>
+            </md-list-item>
+          </li>
+          <li>
+            <md-list-item>
+              <md-icon class="linkIcon1">brightness_low
+              </md-icon>
+              <h4 (click)="isTlbOpen = !isTlbOpen;">Task</h4>
+            </md-list-item>
+          </li>
+          <li>
+            <md-list-item>
+              <md-icon class="linkIcon1">
+                today
+              </md-icon>
+              <h4 (click)="isTlbOpen = !isTlbOpen;">Calender</h4>
+            </md-list-item>
+          </li>
+          <li>
+            <md-list-item>
+              <md-icon class="linkIcon1">
+                perm_identity
+              </md-icon>
+              <h4 (click)="isTlbOpen = !isTlbOpen;">Contact</h4>
+            </md-list-item>
+          </li>
+        </ul>
+      </nav>
+    </md-list>
+  </md-sidenav>
+  <div class="main-router-ipad" (click)="isTlbOpen = isTlbClose;" class="marginRight" [ngClass]="{
+     'main-router':service.ui({n:'sidenav'}), 'main-router-main':!service.ui({n:'sidenav'}), 'marginRight_main':!service.ui({n:'sidenav'})}">
+    <md-toolbar class="welcome">
+      <div fxLayoutAlign="start" fxFlex>
+        <h4>Welcome</h4>
+      </div>
+      <div fxLayoutAlign="end">
+        <md-icon>notifications_none</md-icon>
+        <md-icon>mail_outline</md-icon>
+        <md-icon>power_settings_new</md-icon>
+      </div>
+    </md-toolbar>
+    <router-outlet>
+    </router-outlet>
+  </div>
 </md-sidenav-container>

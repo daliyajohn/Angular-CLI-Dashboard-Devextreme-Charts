@@ -36,7 +36,7 @@ body {
 }
 .mat-sidenav .linkIcon1 {
   font-size: 23px !important;
-  color: rgba(255, 255, 255, 0.54);
+  color: rgba(255, 255, 255, 0.77);
 }
 
 .tlb-open {
@@ -69,38 +69,20 @@ body {
 .app-sidenav .mat-nav-list .mat-list-item .mat-list-item-content {
     height: 53px!important;
 }
-
 .admin_name img .tlb-open {
   width: 123px;
   height: 123px;
   margin-left: 25px;
 }
-
-
-
 @media (min-width: 740px) and (max-width: 888px) {
-    .mat-list .mat-list-item .mat-list-item-content {
-        padding: 0px 7px 0px 7px;
-    }
-    /* .main-router-main {
-        max-height: 100% !important;
-        height: initial !important;
-        overflow: auto !important;
-    } */
+  .mat-list .mat-list-item .mat-list-item-content {
+      padding: 0px 7px 0px 7px;
+  }
 }
-
-@media (min-width: 490px) and (max-width: 790px) {
-    /* .main-router-main {
-        max-height: 100% !important;
-        height: initial !important;
-        overflow: auto !important;
-    } */
-}
-
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    .main-router-ipad {
-        height: 100vh;
-    }
+  .main-router-ipad {
+      height: 100vh;
+  }
 }
 .overlay-none {
     display: none;
